@@ -45,11 +45,12 @@ ax.get_yaxis().set_visible(False)
 ax.get_xaxis().set_visible(False)
 
 v_buffer = 10
-plt.xlim(0, max(nums))
+h_buffer = 10
+plt.xlim(0 - h_buffer, max(nums) + h_buffer)
 plt.ylim(-1 * (max(ds) / 2 + v_buffer), max(ds) / 2 + v_buffer)
 
 plt.gca().set_aspect('equal', adjustable='box')
 
 
 
-fig.savefig('fig.png', bbox_inches='tight', dpi=1000)
+fig.savefig(str(n) + '.png', bbox_inches='tight', dpi=1000)

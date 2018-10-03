@@ -18,7 +18,7 @@ def recaman(n):
   return nums
 
 
-n = 100
+n = 33
 # generate sequence
 nums = recaman(n)
 
